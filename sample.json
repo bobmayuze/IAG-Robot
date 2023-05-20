@@ -1,0 +1,29 @@
+{
+    "OVERVIEW_DEFINITIONS": {
+        "Agreement_Date": "This is part of the content of the file",
+        "Company": "This is part of the content of the file",
+        "Governing_Law": "This is part of the content of the file",
+        "Dispute_Resolution_Jurisdiction": "This is part of the content of the file",
+        "State_of_Incorporation": "This is part of the content of the file",
+        "Stock_Plan": "This is part of the content of the file"
+    },
+    "BOARD_COMPOSITION_DEFINITIONS": {
+        "Common_Board_Member_Count": "This is part of the content of the file",
+        "Mutual_Consent_Board_Member_Count": "This is part of the content of the file",
+        "Series_Seed_Board_Member_Count": "This is part of the content of the file",
+        "Common_Control_Holders": "This is part of the content of the file"
+    },
+    "TERM_SHEET_DEFINITIONS": {
+        "Major_Purchaser_Dollar_Threshold": "This is part of the content of the file",
+        "Purchase_Price": "This is part of the content of the file",
+        "Total_Series_Seed_Investment_Amount": "This is part of the content of the file",
+        "Unallocated_Post_Money_Option_Pool_Percent": "This is part of the content of the file",
+        "Purchaser_Counsel_Reimbursement_Amount": "This is part of the content of the file"
+    },
+    "RESULTING_CAP_TABLE_DEFINITIONS": {
+        "Common_Shares_Issued_and_Outstanding_Pre_Money": "This is part of the content of the file",
+        "Total_Post_Money_Shares_Reserved_for_Option_Pool": "This is part of the content of the file",
+        "Number_of_Issued_And_Outstanding_Options": "This is part of the content of the file",
+        "Unallocated_Post_Money_Option_Pool_Shares": "This is part of the content of the file"
+    }
+}
