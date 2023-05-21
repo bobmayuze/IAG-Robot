@@ -5,20 +5,20 @@ from langchain.document_loaders import UnstructuredHTMLLoader
 import random
 import time
 
-HTML_FILE_PATH = './data/output.html'
+HTML_FILE_PATH = './data/Arrowhead.html'
 
 import os
 from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
+os.environ["OPENAI_API_KEY"] = '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'
 
 from langchain.document_loaders import UnstructuredHTMLLoader
 from langchain.llms import OpenAI
-
+from langchain.indexes import VectorstoreIndexCreator
+llm = OpenAI(temperature=0)
 
 loader = UnstructuredHTMLLoader(HTML_FILE_PATH)
-llm = OpenAI(temperature=0)
-from langchain.indexes import VectorstoreIndexCreator
 index = VectorstoreIndexCreator().from_loaders([loader])
 
 def qeury_doc(built_index, query):
@@ -61,15 +61,15 @@ with gr.Blocks() as demo:
     gr.Markdown(
         '''
         # 👩🏻‍⚖️ Investment Document Generator 
-        Feeling lazy? Try it out!
+        Feeling overwhelmed by investment agreements? Try it out!
         '''
     )
     
     with gr.Row():
         html_input = gr.File(
-            label= 'Test with html',
+            label= 'Generated Investment Agreement',
         )
-        html_button = gr.Button("HTML Button! ")
+        html_button = gr.Button("🦄Show it! ")
 
     with gr.Row():
         html_out = gr.HTML(value = '''
